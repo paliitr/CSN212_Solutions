@@ -1,4 +1,12 @@
 def longestSequence(seq):
+
+    '''
+    The functions input should be an array containing integers.
+    It will return the length of longest iterating subsequence.
+
+    >>>longestSequence([5 3 4 2 5 6 7])
+    5
+    '''
     result = 1
     dp = []
     for i in range(len(seq)):
@@ -17,4 +25,12 @@ def longestSequence(seq):
         result = result0 if result0 >= result else result
     return result
 
-print(longestSequence([int(a) for a in str(input()).split(",")]))
+def main():
+    '''
+    Input should be in the format of integers seperated by commas
+    Prints an output denoting length of longest iterating subsequence
+    '''
+    print(longestSequence([int(a) for a in str(input()).split(",")]))
+
+if __name__=="__main__":
+    main()
