@@ -1,6 +1,6 @@
 class BellmanFord:
-    def __init__(self, src, aList=None, eTuple=None):
-        self.nV = len(aList.keys())
+    def __init__(self, src, v, aList=None, eTuple=None):
+        self.nV = v
         self.src = src
         self.listE = []
         self.D = {}
