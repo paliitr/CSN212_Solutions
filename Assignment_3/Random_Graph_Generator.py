@@ -28,7 +28,7 @@ class RandomGraphGenerator():
                 a = r.randint(1, self.v)
                 b = r.randint(1, self.v)
             generated.append((a, b))
-            w = r.randint(1, self.max_w)
+            w = r.randint(-self.max_w, self.max_w)
             self.edge_list.append((a, b, w))
 
     def generate_adjacency_list(self):
@@ -42,7 +42,7 @@ class RandomGraphGenerator():
                 a = r.randint(1, self.v)
                 b = r.randint(1, self.v)
             generated.append((a, b))
-            w = r.randint(1, self.max_w)
+            w = r.randint(-self.max_w, self.max_w)
             self.adjacency_list[a].update({b:w})
 
     def get_edge_list(self):
