@@ -19,9 +19,6 @@ def pt_to_arr(pts):
         pts[i] = [pts[i].x, pts[i].y]
     return pts
 
-def drawPointPlot(pts, hull):
-    pass
-
 def write_to_csv(pts, algo=None):
     if algo == None:
         pts = pt_to_arr(pts)
