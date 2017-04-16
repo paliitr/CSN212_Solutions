@@ -82,8 +82,9 @@ def main():
     plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
            ncol=3, mode="expand", borderaxespad=0.)
     plt.axis([0, 11000, 0, 1])
-    plt.show()
     plt.savefig('chart.png')
+    plt.show()
+    plt.close()
 
 
 if __name__ == '__main__':
